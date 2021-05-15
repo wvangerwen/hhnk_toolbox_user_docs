@@ -13,9 +13,9 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('source'))
-sys.path.append('source/md_files')
-sys.path.append('source/images/installation')
+sys.path.insert(0, os.path.abspath(''))
+sys.path.append('md_files')
+sys.path.append('images/installation')
 
 # -- Project information -----------------------------------------------------
 
