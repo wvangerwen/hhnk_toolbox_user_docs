@@ -26,7 +26,7 @@ De plugin maakt gebruik van de volgende Python packages:
   threedigrid~=1.1.1
   ogr~=0.24.1
   PyQt5~=5.11.3
-  #! hhnk_wsa_tests
+  hhnk_threedi_tests
 ```
 
 
@@ -138,7 +138,7 @@ en klik 'Enter':
 Als je van plan bent om de ```3di Toolbox``` te installeren kun je dat het best nu doen. Wanneer je klaar bent met 
 die installatie of je de ```3di Toolbox``` niet wilt installeren type je het volgende in de ```OSGeo4W command prompt```:
 
-```pip install #!hhnk_wsa_tests```
+```pip install hhnk_threedi_tests``` (installeert ook automatisch hhnk_research_tools)
 
 Je bent nu klaar om de plugin in ```QGIS``` te installeren!
 
