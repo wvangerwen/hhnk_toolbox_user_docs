@@ -140,6 +140,19 @@ die installatie of je de ```3di Toolbox``` niet wilt installeren type je het vol
 
 ```pip install hhnk_threedi_tests``` (installeert ook automatisch hhnk_research_tools)
 
+TODO
+```pip install -i --upgrade https://test.pypi.org/simple/ hhnk-threedi-tests``` (deze plugin staat nog op de testpypi, bij eerste installatie de --upgrade weglaten)
+
+Dit werkt niet helemaal omdat via de cmd de python pakketen die onder `C:\OSGeo4W64\apps\qgis-ltr\python` staan niet in het pad zijn opgenomen. Daarom nu gebruikt gemaakt van een .bat file die deze paden goed zet. TODO; bat-file opnemen in documentatie.
+
+Installatie werkt niet helemaal omdat github en pip een andere naam hebben hhnk_research_tools_py vs hhnk_research_tools. Fixen door:
+```
+pip uninstall hhnk_research_tools
+pip install hhnk-research-tools
+```
+
+
+
 Je bent nu klaar om de plugin in ```QGIS``` te installeren!
 
 <a id="plugin_installatie"></a>
