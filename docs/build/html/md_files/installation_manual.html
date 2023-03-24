@@ -1,189 +1,58 @@
-
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Installatie instructies &#8212; HHNK toolbox QGIS plugin 0.0.1 documentation</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installatie instructies &mdash; HHNK toolbox QGIS plugin 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Gebruikershandleiding" href="usage.html" />
-    <link rel="prev" title="HHNK Toolbox" href="../index.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="prev" title="HHNK Toolbox" href="../index.html" /> 
+</head>
 
-  </head><body>
-  
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
           
-
-          <div class="body" role="main">
-            
-  <div class="section" id="installatie-instructies">
-<h1>Installatie instructies<a class="headerlink" href="#installatie-instructies" title="Permalink to this headline">¶</a></h1>
-<ol class="simple">
-<li><p><a class="reference external" href="#vereisten">Vereisten</a></p></li>
-<li><p><a class="reference external" href="#osgeo4w_install">Python depencendies installeren</a></p></li>
-<li><p><a class="reference external" href="#plugin_installatie">Plugin installatie</a></p></li>
-</ol>
-<p><a id="vereisten"></a></p>
-<div class="section" id="vereisten">
-<h2>Vereisten<a class="headerlink" href="#vereisten" title="Permalink to this headline">¶</a></h2>
-<p>De HHNK toolbox heeft de volgende (systeem) vereisten:</p>
-<div class="section" id="qgis-version">
-<h3>QGIS version:<a class="headerlink" href="#qgis-version" title="Permalink to this headline">¶</a></h3>
-<p>Plugin is compatibel met QGIS version 3.10 en hoger</p>
-</div>
-<div class="section" id="python-packages">
-<h3>Python packages<a class="headerlink" href="#python-packages" title="Permalink to this headline">¶</a></h3>
-<p>De plugin maakt gebruik van de volgende Python packages:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">GDAL</span><span class="o">~=</span><span class="mf">3.1.4</span>
-  <span class="n">matplotlib</span><span class="o">~=</span><span class="mf">3.1.3</span>
-  <span class="n">numpy</span><span class="o">~=</span><span class="mf">1.19.1</span>
-  <span class="n">geopandas</span><span class="o">~=</span><span class="mf">0.7.0</span>
-  <span class="n">rtree</span><span class="o">~=</span><span class="mf">0.9.7</span>
-  <span class="n">pandas</span><span class="o">~=</span><span class="mf">1.0.1</span>
-  <span class="n">Shapely</span><span class="o">~=</span><span class="mf">1.7.0</span>
-  <span class="n">threedigrid</span><span class="o">~=</span><span class="mf">1.1.1</span>
-  <span class="n">ogr</span><span class="o">~=</span><span class="mf">0.24.1</span>
-  <span class="n">PyQt5</span><span class="o">~=</span><span class="mf">5.11.3</span>
-  <span class="n">hhnk_threedi_tests</span>
-</pre></div>
-</div>
-<p><a id="osgeo4w_install"></a></p>
-</div>
-</div>
-<div class="section" id="python-depencendies-installeren-osgeo4w">
-<h2>Python depencendies installeren (OSGeo4W)<a class="headerlink" href="#python-depencendies-installeren-osgeo4w" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="installatie-dependencies-met-osgeo4w-intaller">
-<h3>Installatie dependencies met <code class="docutils literal notranslate"><span class="pre">OSGeo4W</span> <span class="pre">intaller</span></code><a class="headerlink" href="#installatie-dependencies-met-osgeo4w-intaller" title="Permalink to this headline">¶</a></h3>
-<p>Als je <code class="docutils literal notranslate"><span class="pre">QGIS</span></code> hebt geinstalleerd met de <code class="docutils literal notranslate"><span class="pre">OSGeo4W</span></code> distributie, dan is het verstandig om de benodigde packages
-via de installer te installeren. Deze handleiding gaat uit van een bestaande of nieuwe installatie waarin alleen
-<code class="docutils literal notranslate"><span class="pre">QGIS</span> <span class="pre">Desktop</span></code> is geselecteerd onder de <code class="docutils literal notranslate"><span class="pre">Desktop</span></code> tab om een zo volledig mogelijk overzicht te geven:</p>
-<p><img alt="" src="../_images/osgeo4w_installer.PNG" /></p>
-<p>Open de installer and selecteer ‘Advanced Install’:</p>
-<p><img alt="" src="../_images/advanced_install.PNG" /></p>
-<p>Selecteer ‘install from internet’:</p>
-<p><img alt="" src="../_images/install_from_internet.PNG" /></p>
-<p>Het volgende scherm ziet er als volgt uit:</p>
-<p><img alt="" src="../_images/path_and_permissions.PNG" /></p>
-<p>Check of het pad naar de OSGeo4W installatie klopt. Bepaal of je de installatie alleen voor de huidige gebruiker of
-voor alle gebruikers wil uitvoeren.</p>
-<p>Klik ‘next’ totdat je het volgende scherm bereik en selecteer een ‘connection type’:</p>
-<p><img alt="" src="../_images/connection_type.PNG" /></p>
-<p>(Alleen als je in het vorige scherm ‘Direct Connection’ hebt geselecteerd)
-Selecteer een site waar de packages vandaan zullen worden gedownload (of vul handmatig een url in):</p>
-<p><img alt="" src="../_images/download_site.PNG" /></p>
-<p>Klik volgende:</p>
-<p><img alt="" src="../_images/package_selection.PNG" /></p>
-<p><strong>BELANGRIJK</strong>: Zorg dat ‘Keep’ is geselecteerd bovenin rechts (de andere opties zijn ‘Curr’, ‘Prev’ en ‘Exp’) als de
-standaard optie. Zorg dat de eerste bovenste rij in het middelste veld (‘All <img alt="" src="https://i.imgur.com/JshALTT.png" />) op
-‘Default staat’. Je kunt de setting aanpassen door op het icoon naast ‘All’ te klikken.</p>
-<p>Open de ‘Libs’ tab</p>
-<p>Zoek de volgende packages om te installeren:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">python3</span><span class="o">-</span><span class="n">geopandas</span>   <span class="p">(</span><span class="o">&gt;=</span> <span class="mf">0.7.0</span><span class="p">)</span>
-    <span class="n">python3</span><span class="o">-</span><span class="n">pandas</span>      <span class="p">(</span><span class="o">&gt;=</span> <span class="mf">1.0.1</span><span class="p">)</span>
-    <span class="n">python3</span><span class="o">-</span><span class="n">matplotlib</span>  <span class="p">(</span><span class="o">&gt;=</span> <span class="mf">3.1.3</span><span class="p">)</span>
-    <span class="n">python3</span><span class="o">-</span><span class="n">pip</span>         <span class="p">(</span><span class="n">versie</span> <span class="n">maakt</span> <span class="n">niet</span> <span class="n">uit</span><span class="p">)</span>
-    
-    <span class="n">Als</span> <span class="n">je</span> <span class="n">niet</span> <span class="n">van</span> <span class="n">plan</span> <span class="n">bent</span> <span class="n">om</span> <span class="n">de</span> <span class="mi">3</span><span class="n">diToolbox</span> <span class="n">ook</span> <span class="n">te</span> <span class="n">installeren</span> <span class="p">(</span><span class="n">als</span> <span class="n">je</span> <span class="n">dat</span> <span class="n">wel</span> <span class="n">van</span> <span class="n">plan</span> <span class="n">bent</span><span class="p">,</span> 
-    <span class="n">sla</span> <span class="n">deze</span> <span class="n">package</span> <span class="n">dan</span> <span class="n">over</span><span class="p">):</span>
-    
-    <span class="n">python3</span><span class="o">-</span><span class="n">h5py</span>        <span class="p">(</span><span class="mf">2.10.0</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Voorbeeld:</p>
-<p><img alt="" src="../_images/packages_to_select.PNG" /></p>
-<p>Click op de ‘mode’ knop (<img alt="" src="https://i.imgur.com/JshALTT.png" />) totdat een installatie is geselecteerd (dit is te zien aan
-het feit dat er een versie staat)</p>
-<p>Klik volgende. Er wordt je nu gevraagd een aantal dependencies te installeren waaronder een aantal packages die nodig
-zijn voor deze plugin:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    gdal/ogr        (3.1.4)     Nodig voor ```QGIS``` installatie
-    numpy           (1.19.1)    Nodig voor ```QGIS``` installatie
-    PyQt5           (5.11.3)    Nodig voor ```QGIS``` installatie
-    sqlite3                     Nodig voor ```QGIS``` installatie
-    setuptools      (45.2.0)    Nodig voor ```matplotlib``` installatie
-    Shapely         (1.7.0)     Nodig voor ```geopandas``` installatie
-    fiona           (1.8.10)    Nodig voor ```geopandas``` installatie
-</pre></div>
-</div>
-</div>
-<div class="section" id="installatie-dependencies-met-osgeo4w-command-prompt">
-<h3>Installatie dependencies met <code class="docutils literal notranslate"><span class="pre">OSGeo4W</span></code> command prompt<a class="headerlink" href="#installatie-dependencies-met-osgeo4w-command-prompt" title="Permalink to this headline">¶</a></h3>
-<p>Ga naar de map waar <code class="docutils literal notranslate"><span class="pre">OSGeo4W</span></code> is geinstalleerd</p>
-<p><img alt="" src="../_images/osgeo4w_folder.PNG" /></p>
-<p>Open de OSGeo4W command prompt (zorg dat je de juiste rechten hebt, het kan zijn dat je de prompt als Administrator moet
-openen)</p>
-<p>In de command prompt navigeer je naar de map van je OSGeo4W installatie door het volgende commando in te typen:</p>
-<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">[path_to_osgeo4w_installation]</span></code> (laat de blokhaken weg)</p>
-<p>Type het volgende commando en druk op ‘Enter’:</p>
-<p><code class="docutils literal notranslate"><span class="pre">call</span> <span class="pre">bin\py3_env.bat</span></code></p>
-<p>Dit activeert de Python omgeving die deel uitmaakt van je <code class="docutils literal notranslate"><span class="pre">OSGeo4W</span></code> installatie. Je kunt checken of dit gewerkt
-heeft door <code class="docutils literal notranslate"><span class="pre">set</span></code> in de command prompt te typen. Controleer dat <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> en <code class="docutils literal notranslate"><span class="pre">PYTHONHOME</span></code> verwijzen naar
-de juiste paden (in de OSGeo4W map).</p>
-<p>Als je niet van plan bent om de <code class="docutils literal notranslate"><span class="pre">3di</span> <span class="pre">Toolbox</span></code> te installeren, type je het volgende commando in de command prompt
-en klik ‘Enter’:</p>
-<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">threedigrid</span></code></p>
-<p>Als je van plan bent om de <code class="docutils literal notranslate"><span class="pre">3di</span> <span class="pre">Toolbox</span></code> te installeren kun je dat het best nu doen. Wanneer je klaar bent met
-die installatie of je de <code class="docutils literal notranslate"><span class="pre">3di</span> <span class="pre">Toolbox</span></code> niet wilt installeren type je het volgende in de <code class="docutils literal notranslate"><span class="pre">OSGeo4W</span> <span class="pre">command</span> <span class="pre">prompt</span></code>:</p>
-<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">hhnk_threedi_tests</span></code> (installeert ook automatisch hhnk_research_tools)</p>
-<p>Je bent nu klaar om de plugin in <code class="docutils literal notranslate"><span class="pre">QGIS</span></code> te installeren!</p>
-<p><a id="plugin_installatie"></a></p>
-</div>
-</div>
-<div class="section" id="de-plugin-installeren">
-<h2>De plugin installeren<a class="headerlink" href="#de-plugin-installeren" title="Permalink to this headline">¶</a></h2>
-<p>Om de plugin te installeren open je <code class="docutils literal notranslate"><span class="pre">QGIS</span></code> en navigeer je naar <code class="docutils literal notranslate"><span class="pre">plugins</span> <span class="pre">&gt;</span> <span class="pre">manage</span> <span class="pre">and</span> <span class="pre">install</span> <span class="pre">plugins</span></code>:</p>
-<p><img alt="" src="../_images/manage_install_plugin_access.PNG" /></p>
-<p>Dit opent de plugin manager. Klik op <code class="docutils literal notranslate"><span class="pre">install</span> <span class="pre">from</span> <span class="pre">ZIP</span></code>, selecteer de <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file van de plugin en klik op
-‘Install Plugin’. De plugin is nu geinstalleerd in <code class="docutils literal notranslate"><span class="pre">QGIS</span></code>.</p>
-<p>Als dit niet werkt kun je de zip file ook direct uitpakken in de <code class="docutils literal notranslate"><span class="pre">QGIS</span></code> plugin map. Dit pad ziet er als volgt uit:</p>
-<p><code class="docutils literal notranslate"><span class="pre">C:\Users\[gebruiker]\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins</span></code> (waar gebruiker de naam van de
-gebruiker voor wie je de plugin installeert is)</p>
-<p><img alt="" src="../_images/plugin_manager_install_from_zip.PNG" /></p>
-<p>Om de plugin te activeren klik je (in hetzelfde scherm als in de vorige stap) op ‘Installed’. Zoek de HHNK_toolbox in
-de lijst en zorg dat deze is aangevinkt.</p>
-<p>Je kunt de plugin manager nu afsluiten.</p>
-<p><img alt="" src="../_images/plugin_manager_activate_highlighted.png" /></p>
-<p>De plugin is nu te vinden in de toolbar en in het menu onder ‘Plugins’. De plugin is nu klaar voor gebruik!</p>
-</div>
-</div>
-
-
-          </div>
           
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">HHNK toolbox QGIS plugin</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-<ul class="current">
+          <a href="../index.html" class="icon icon-home">
+            HHNK toolbox QGIS plugin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installatie instructies</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#vereisten">Vereisten</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#python-depencendies-installeren-osgeo4w">Python depencendies installeren (OSGeo4W)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#de-plugin-installeren">De plugin installeren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installatie-3di-modeller-interface-qgis">Installatie 3Di Modeller Interface (QGIS)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installatie-van-de-modeller-interface">Installatie van de Modeller Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activatie-van-de-threeditoolbox">Activatie van de ThreeDiToolbox</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installatie-hhnk-toolbox-plugin">Installatie HHNK Toolbox Plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bekende-problemen">Bekende problemen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#directe-installatie-in-plugin-folder">Directe installatie in plugin-folder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inconsistente-python-omgeving">Inconsistente Python omgeving</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Gebruikershandleiding</a></li>
@@ -191,51 +60,118 @@ de lijst en zorg dat deze is aangevinkt.</p>
 <li class="toctree-l1"><a class="reference internal" href="tests_documentation.html">Uitleg tests en functionaliteit</a></li>
 </ul>
 
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../index.html" title="previous chapter">HHNK Toolbox</a></li>
-      <li>Next: <a href="usage.html" title="next chapter">Gebruikershandleiding</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2021, L. Ravier.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="../_sources/md_files/installation_manual.md.txt"
-          rel="nofollow">Page source</a>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HHNK toolbox QGIS plugin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installatie instructies</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/md_files/installation_manual.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installatie-instructies">
+<h1>Installatie instructies<a class="headerlink" href="#installatie-instructies" title="Permalink to this heading"></a></h1>
+<p>De HHNK Toolbox is te installeren in de volgende twee stappen:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#modeller_interface_installatie"><span class="xref myst">Installatie 3Di Modeller Interface (QGIS)</span></a></p></li>
+<li><p><a class="reference internal" href="#plugin_installatie"><span class="xref myst">Installatie HHNK Toolbox Plugin</span></a></p></li>
+</ol>
+<p>Wanneer er tijdens de installatie zaken niet gaan zoals verwacht, kun je kijken bij <a class="reference internal" href="#bekende_problemen"><span class="xref myst">bekende problemen</span></a></p>
+<p><a id="modeller_interface_installatie"></a></p>
+<section id="installatie-3di-modeller-interface-qgis">
+<h2>Installatie 3Di Modeller Interface (QGIS)<a class="headerlink" href="#installatie-3di-modeller-interface-qgis" title="Permalink to this heading"></a></h2>
+<section id="installatie-van-de-modeller-interface">
+<h3>Installatie van de Modeller Interface<a class="headerlink" href="#installatie-van-de-modeller-interface" title="Permalink to this heading"></a></h3>
+<p>Het installeren van de 3Di Modeller Interface kun je uitvoeren met deze <a class="reference external" href="https://docs.3di.live/f_3di_instruments_and_downloads.html#di-instruments-and-downloads">Installatie handleiding</a>. Voer de installatie van de Modeller Interface uit.</p>
+<p><img alt="" src="../_images/mi_installer.PNG" /></p>
+</section>
+<section id="activatie-van-de-threeditoolbox">
+<h3>Activatie van de ThreeDiToolbox<a class="headerlink" href="#activatie-van-de-threeditoolbox" title="Permalink to this heading"></a></h3>
+<p>Bij het starten van de Modeller Interface wordt de 3Di Toolbox geinstalleerd:</p>
+<p><img alt="" src="../_images/mi_threedi_toolbox_installation.PNG" /></p>
+<p>Na de installatie van de 3Di Toolbox moet je de Modeller Interface (zoals gevraagd) herstarten:</p>
+<p><img alt="" src="../_images/mi_threedi_toolbox_restart.PNG" /></p>
+<p>Kijk, na herstart, of de 3Di Toolbox goed is geinstalleerd. Navigeer naar <code class="docutils literal notranslate"><span class="pre">plugins</span> <span class="pre">&gt;</span> <span class="pre">manage</span> <span class="pre">and</span> <span class="pre">install</span> <span class="pre">plugins</span></code>:</p>
+<p><img alt="" src="../_images/mi_threedi_toolbox_active.PNG" /></p>
+<p><a id="plugin_installatie"></a></p>
+</section>
+</section>
+<section id="installatie-hhnk-toolbox-plugin">
+<h2>Installatie HHNK Toolbox Plugin<a class="headerlink" href="#installatie-hhnk-toolbox-plugin" title="Permalink to this heading"></a></h2>
+<p>Navigeer je naar <code class="docutils literal notranslate"><span class="pre">plugins</span> <span class="pre">&gt;</span> <span class="pre">manage</span> <span class="pre">and</span> <span class="pre">install</span> <span class="pre">plugins</span></code>. Dit opent de plugin manager. Klik op <code class="docutils literal notranslate"><span class="pre">install</span> <span class="pre">from</span> <span class="pre">ZIP</span></code></p>
+<p><img alt="" src="../_images/plugin_manager_install_from_zip.PNG" /></p>
+<p>Selecteer de <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file van de plugin en klik op <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>. Negeer de security warning.</p>
+<p><img alt="" src="../_images/plugin_security_warning.PNG" /></p>
+<p>De plugin wordt nu geinstalleerd in de Modeller Interface, inclusief alle ontbrekende modules:
+<img alt="" src="../_images/plugin_installation.PNG" /></p>
+<p>Na installatie moet je, zoals aangegeven, de Modeller Interface opnieuw starten:
+<img alt="" src="../_images/plugin_restart_warning.PNG" /></p>
+<p>Als alles goed is gegaan is de plugin nu klaar voor gebruik:
+<img alt="" src="../_images/plugin_ready.PNG" /></p>
+<p><a id="bekende_problemen"></a></p>
+</section>
+<section id="bekende-problemen">
+<h2>Bekende problemen<a class="headerlink" href="#bekende-problemen" title="Permalink to this heading"></a></h2>
+<section id="directe-installatie-in-plugin-folder">
+<h3>Directe installatie in plugin-folder<a class="headerlink" href="#directe-installatie-in-plugin-folder" title="Permalink to this heading"></a></h3>
+<p>Als de installatie via de plugin manager niet (soepel) verloopt, kun je de zip-fole ook direct uitpakken in de plugin map. Deze staat in:
+<code class="docutils literal notranslate"><span class="pre">c:\Users\{gebruiker}\AppData\Roaming\3Di\QGIS3\profiles\default\python\plugins\</span></code> (waar gebruiker de naam van de
+gebruiker voor wie je de plugin installeert is)</p>
+<p>N.B. Na het uitpakken van de zip-file moet je zorgen dat de plugin staat aangevinkt, de installatie van de ontbrekende python modules wordt uitgevoerd en de Modeller Interface wordt herstart zoals beschreven bij de <a class="reference internal" href="#plugin_installatie"><span class="xref myst">“installatie”</span></a></p>
+</section>
+<section id="inconsistente-python-omgeving">
+<h3>Inconsistente Python omgeving<a class="headerlink" href="#inconsistente-python-omgeving" title="Permalink to this heading"></a></h3>
+<p>De plugin is getest in een Python omgeving beschreven in deze Conda <a class="reference external" href="https://github.com/threedi/hhnk-threedi-plugin/blob/main/hhnk_threedi_plugin/env/environment.yml">environment.yml</a>. Het kan zijn dat de Python versie en/of modules geinstalleerd in de Modeller Interface en 3Di Toolbox niet (meer) compatible zijn met de geteste versie van de HHNK Toolbox. Als dat zo is, krijg je bij start van de installatie de volgende melding:
+<img alt="" src="../_images/plugin_inconsistent_dependencies_warning.png" /></p>
+<p>Zolang de plugin werkt, kun je deze melding negeren/verhelpen, maar uiteindelijk zal de HHNK Toolbox plugin éérst goed getest moeten worden in de gebruikte MI versie.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="HHNK Toolbox" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral float-right" title="Gebruikershandleiding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-    
+  <hr/>
 
-    
-  </body>
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, L. Ravier.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>
