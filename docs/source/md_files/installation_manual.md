@@ -32,7 +32,9 @@ Kijk, na herstart, of de 3Di Toolbox goed is geinstalleerd en geactiveerd. Navig
 <a id="plugin_installatie"></a>
 
 ## Installatie HHNK Toolbox Plugin
-Download `hhnk_threedi_plugin.zip` uit de laatste release van <a href="https://github.com/threedi/hhnk-threedi-plugin/releases/latest" target="_blank">https://github.com/threedi/hhnk-threedi-plugin/releases/latest</a>:
+Download `hhnk_threedi_plugin.zip` [hier](https://github.com/threedi/hhnk-threedi-plugin/releases/latest/download/hhnk_threedi_plugin.zip). 
+
+Je kunt hem ook downloaden via de release-pagina op GitHub <a href="https://github.com/threedi/hhnk-threedi-plugin/releases/latest" target="_blank">https://github.com/threedi/hhnk-threedi-plugin/releases/latest</a>:
 
 ![](../images/installation/plugin_download_zip.PNG)
 
@@ -40,7 +42,7 @@ Navigeer naar `plugins > manage and install plugins`. In de Plugin Manager, klik
 
 ![](../images/installation/plugin_manager_install_from_zip.PNG)
 
-Selecteer de `.zip` file van de plugin en klik op `Install Plugin`. Negeer de security warning.
+Selecteer de zip-file van de plugin en klik op `Install Plugin`. Negeer de security warning.
 
 ![](../images/installation/plugin_security_warning.PNG)
 
