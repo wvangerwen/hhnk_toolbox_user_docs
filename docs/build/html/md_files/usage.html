@@ -1,86 +1,135 @@
-
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gebruikershandleiding &#8212; HHNK toolbox QGIS plugin 0.0.1 documentation</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gebruikershandleiding &mdash; HHNK toolbox QGIS plugin 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Bron data" href="needed_data.html" />
-    <link rel="prev" title="Installatie instructies" href="installation_manual.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="prev" title="Installatie instructies" href="installation_manual.html" /> 
+</head>
 
-  </head><body>
-  
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
           
+          
+          <a href="../index.html" class="icon icon-home">
+            HHNK toolbox QGIS plugin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation_manual.html">Installatie instructies</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gebruikershandleiding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#plugin-overzicht">Plugin overzicht</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polder-selecteren">1. Polder selecteren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nieuw-project-aanmaken">2. Nieuw project aanmaken</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelstaat-aanpassen">3. Modelstaat aanpassen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sqlite-tests">4. Sqlite tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d1d-tests">5. 0d1d tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bank-levels-test">6. Bank levels test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d2d-tests">7. 1d2d tests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="needed_data.html">Bron data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests_documentation.html">Uitleg tests en functionaliteit</a></li>
+</ul>
 
-          <div class="body" role="main">
-            
-  <div class="section" id="gebruikershandleiding">
-<h1>Gebruikershandleiding<a class="headerlink" href="#gebruikershandleiding" title="Permalink to this headline">¶</a></h1>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HHNK toolbox QGIS plugin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Gebruikershandleiding</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/md_files/usage.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gebruikershandleiding">
+<h1>Gebruikershandleiding<a class="headerlink" href="#gebruikershandleiding" title="Permalink to this heading"></a></h1>
 <p>Deze pagina is bedoeld als handleiding om de HHNK Toolbox te gebruiken.</p>
-<p>Voor inhoudelijke uitleg van de tests, zie <a class="reference internal" href="tests_documentation.html"><span class="doc std std-doc">Documentatie</span></a>
-Voor uitleg over de benodigde data, zie <a class="reference internal" href="needed_data.html"><span class="doc std std-doc">Bron data</span></a>
+<p>Voor inhoudelijke uitleg van de tests, zie <a class="reference internal" href="tests_documentation.html"><span class="std std-doc">Documentatie</span></a>
+Voor uitleg over de benodigde data, zie <a class="reference internal" href="needed_data.html"><span class="std std-doc">Bron data</span></a>
 Voor uitleg over de interpretatie van resultaten, zie !!!</p>
-<div class="section" id="plugin-overzicht">
-<h2>Plugin overzicht<a class="headerlink" href="#plugin-overzicht" title="Permalink to this headline">¶</a></h2>
+<section id="plugin-overzicht">
+<h2>Plugin overzicht<a class="headerlink" href="#plugin-overzicht" title="Permalink to this heading"></a></h2>
 <p><img alt="" src="../_images/plugin_overview_legend.png" /></p>
-<ol class="simple">
-<li><p><a class="reference external" href="#polder_selection">Polder selecteren</a></p></li>
-<li><p><a class="reference external" href="#new_project">Nieuw project aanmaken</a></p></li>
-<li><p><a class="reference external" href="#model_state_conversion">Modelstaat aanpassen</a></p></li>
-<li><p><a class="reference external" href="#sqlite_tests">Sqlite tests</a></p></li>
-<li><p><a class="reference external" href="#0d1d_tests">0d1d tests</a></p></li>
-<li><p><a class="reference external" href="#bank_levels_test">Bank levels</a></p></li>
-<li><p><a class="reference external" href="#1d2d_tests">1d2d tests</a></p></li>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#polder_selection"><span class="xref myst">Polder selecteren</span></a></p></li>
+<li><p><a class="reference internal" href="#new_project"><span class="xref myst">Nieuw project aanmaken</span></a></p></li>
+<li><p><a class="reference internal" href="#model_state_conversion"><span class="xref myst">Modelstaat aanpassen</span></a></p></li>
+<li><p><a class="reference internal" href="#sqlite_tests"><span class="xref myst">Sqlite tests</span></a></p></li>
+<li><p><a class="reference internal" href="#0d1d_tests"><span class="xref myst">0d1d tests</span></a></p></li>
+<li><p><a class="reference internal" href="#bank_levels_test"><span class="xref myst">Bank levels</span></a></p></li>
+<li><p><a class="reference internal" href="#1d2d_tests"><span class="xref myst">1d2d tests</span></a></p></li>
 </ol>
 <p><a id="polder_selection"></a></p>
-</div>
-<div class="section" id="polder-selecteren">
-<h2>1. Polder selecteren<a class="headerlink" href="#polder-selecteren" title="Permalink to this headline">¶</a></h2>
-<p>Selecteer een project map (zie <a class="reference external" href="tests_documentation.html#project_indeling">project indeling</a> voor uitleg over de
+</section>
+<section id="polder-selecteren">
+<h2>1. Polder selecteren<a class="headerlink" href="#polder-selecteren" title="Permalink to this heading"></a></h2>
+<p>Selecteer een project map (zie <a class="reference internal" href="#tests_documentation.html#project_indeling"><span class="xref myst">project indeling</span></a> voor uitleg over de
 standaard indeling voor een project). Het is handig maar niet noodzakelijk om een project volgens de standaard indeling
 in te richten. De meeste functionaliteit van de plugin is alleen beschikbaar wanneer een project
 is geselecteerd.</p>
 <p><a id="new_project"></a></p>
-</div>
-<div class="section" id="nieuw-project-aanmaken">
-<h2>2. Nieuw project aanmaken<a class="headerlink" href="#nieuw-project-aanmaken" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="nieuw-project-aanmaken">
+<h2>2. Nieuw project aanmaken<a class="headerlink" href="#nieuw-project-aanmaken" title="Permalink to this heading"></a></h2>
 <p>Wanneer je op deze knop klikt open zich een nieuw venster:</p>
 <p><img alt="" src="../_images/new_project_setup_legend.PNG" /></p>
 <p>Selecteer een map om het nieuwe project in aan te maken (veld 1). Geef het nieuwe project een naam (de conventie is om
 het project de naam van het gebied waar het model een weergave van is te geven) in veld 2.</p>
 <p>Wanneer je op ‘Project aanmaken’ klikt wordt er een lege mappenstructuur aangemaakt volgens de standaard projectindeling
-(zie <a class="reference external" href="tests_documentation.html#project_indeling">project indeling</a>). In de verschillende mappen worden <code class="docutils literal notranslate"><span class="pre">readme</span></code> files
+(zie <a class="reference internal" href="#tests_documentation.html#project_indeling"><span class="xref myst">project indeling</span></a>). In de verschillende mappen worden <code class="docutils literal notranslate"><span class="pre">readme</span></code> files
 aangemaakt waarin staat welke files in welke map wordt gezocht.</p>
 <p>Het resultaat ziet er als volgt uit:</p>
 <p><img alt="" src="../_images/new_project_created.PNG" /></p>
 <p><a id="model_state_conversion"></a></p>
-</div>
-<div class="section" id="modelstaat-aanpassen">
-<h2>3. Modelstaat aanpassen<a class="headerlink" href="#modelstaat-aanpassen" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="modelstaat-aanpassen">
+<h2>3. Modelstaat aanpassen<a class="headerlink" href="#modelstaat-aanpassen" title="Permalink to this heading"></a></h2>
 <p>Wanneer je op deze knop klikt open zich een nieuw venster:</p>
 <p><img alt="" src="../_images/model_states_conversion_legend.png" /></p>
-<ol>
+<ol class="arabic">
 <li><p>Selecteer een model</p></li>
 <li><p>Zodra een model is geselecteerd wordt de huidige staat gedetecteerd (zie
-<a class="reference external" href="tests_documentation.html#modelstaat_aanpassen">Modelstaat aanpassen</a>). Het is belangrijk dat de gedetecteerde staat
+<a class="reference internal" href="#tests_documentation.html#modelstaat_aanpassen"><span class="xref myst">Modelstaat aanpassen</span></a>). Het is belangrijk dat de gedetecteerde staat
 klopt.</p></li>
 <li><p>Kies de staat om het model naar om te zetten</p></li>
 <li><p>Deze sectie wordt beschikbaar als we bij 3 ‘1d2d toets’ als nieuwe staat hebben geselecteerd. Er zijn twee opties
@@ -107,16 +156,16 @@ aanpassingen zijn gedaan of er rijen zijn uitgesloten dan worden deze wijziginge
 opgeslagen:</p>
 <p><img alt="" src="../_images/model_states_manual_changes.PNG" /></p>
 <p><a id="sqlite_tests"></a></p>
-</div>
-<div class="section" id="sqlite-tests">
-<h2>4. Sqlite tests<a class="headerlink" href="#sqlite-tests" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="sqlite-tests">
+<h2>4. Sqlite tests<a class="headerlink" href="#sqlite-tests" title="Permalink to this heading"></a></h2>
 <p>De sqlite tests zijn bedoeld om het model te controleren op (potentiële) fouten in de data en deze te corrigeren waar
 nodig. Na de sqlite tests is het model klaar om op te bouwen en om de 0d1d toets te draaien (zie
-<a class="reference external" href="tests_documentation.html#0d1d_tests">0d1d toets/Hydraulische toets</a>). Voor de inhoudelijke uitleg van de tests, zie:
-<a class="reference external" href="tests_documentation.html#sqlite_tests">Sqlite tests</a></p>
+<a class="reference internal" href="#tests_documentation.html#0d1d_tests"><span class="xref myst">0d1d toets/Hydraulische toets</span></a>). Voor de inhoudelijke uitleg van de tests, zie:
+<a class="reference internal" href="#tests_documentation.html#sqlite_tests"><span class="xref myst">Sqlite tests</span></a></p>
 <p>Wanneer je op deze knop klikt open zich een nieuw venster:</p>
 <p><img alt="" src="../_images/sqlite_tests_dialog_legend.png" /></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Polder: alleen-lezen veld waarin de huidige project map wordt weergegeven</p></li>
 <li><p>Output map: selecteer de map waar de resultaten in worden opgeslagen (hoeft geen bestaande map te zijn)</p></li>
 <li><p>Model: selecteer een model (<code class="docutils literal notranslate"><span class="pre">*.sqlite</span></code>)</p></li>
@@ -131,7 +180,7 @@ nodig. Na de sqlite tests is het model klaar om op te bouwen en om de 0d1d toets
 </ol>
 <p>Klik op ‘OK’ om de tests te starten. De resultaten worden weergegeven als de tests uitgevoerd zijn:</p>
 <p><img alt="" src="../_images/sqlite_tests_results_legend.PNG" /></p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>De resultaten van sommige tests worden gevisualiseerd als <code class="docutils literal notranslate"><span class="pre">QGIS</span></code> lagen. Deze lagen worden toegevoegd aan het
 <code class="docutils literal notranslate"><span class="pre">layers</span> <span class="pre">panel</span></code> in <code class="docutils literal notranslate"><span class="pre">QGIS</span></code>. De bronnen voor deze lagen zijn <code class="docutils literal notranslate"><span class="pre">geopackages</span> <span class="pre">(.gpkg)</span></code>. Deze files worden
 automatisch aangemaakt en opgeslagen in de gekozen <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">map</span></code>, in de <code class="docutils literal notranslate"><span class="pre">Layers</span></code> submap.</p></li>
@@ -139,13 +188,13 @@ automatisch aangemaakt en opgeslagen in de gekozen <code class="docutils literal
 </ol>
 <p>De test resultaten worden ook als <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files in de gekozen <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">map</span></code> in de <code class="docutils literal notranslate"><span class="pre">Logs</span></code> submap.</p>
 <p><a id="0d1d_tests"></a></p>
-</div>
-<div class="section" id="d1d-tests">
-<h2>5. 0d1d tests<a class="headerlink" href="#d1d-tests" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="d1d-tests">
+<h2>5. 0d1d tests<a class="headerlink" href="#d1d-tests" title="Permalink to this heading"></a></h2>
 <p><img alt="" src="../_images/0d1d_tests_tab_legend.png" /></p>
 <p>De <code class="docutils literal notranslate"><span class="pre">0d1d</span> <span class="pre">tests</span></code> zijn bedoeld om de resultaten van de
-<a class="reference external" href="tests_documentation.html#0d1d_tests">0d1d toets/Hydraulische toets</a> te analyseren.</p>
-<ol class="simple">
+<a class="reference internal" href="#tests_documentation.html#0d1d_tests"><span class="xref myst">0d1d toets/Hydraulische toets</span></a> te analyseren.</p>
+<ol class="arabic simple">
 <li><p>Selecteer 3di resultaten map: map waarin de 0d1d/hydraulic 3di test resultaten per revisie staan opgeslagen</p></li>
 <li><p>Selecteer 3di revisie: format is normaal gesproken {polder name}{revision number}{type of test} (map die
 <code class="docutils literal notranslate"><span class="pre">.nc</span></code> en <code class="docutils literal notranslate"><span class="pre">.h5</span></code> files bevat).</p></li>
@@ -163,12 +212,12 @@ gekozen <code class="docutils literal notranslate"><span class="pre">Output</spa
 resultaten worden ook als <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files in de gekozen <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">map</span></code>, in de map met de naam van de geselecteerde
 <code class="docutils literal notranslate"><span class="pre">revisie</span></code>, in de <code class="docutils literal notranslate"><span class="pre">Logs</span></code> submap.</p>
 <p><a id="bank_levels_test"></a></p>
-</div>
-<div class="section" id="bank-levels-test">
-<h2>6. Bank levels test<a class="headerlink" href="#bank-levels-test" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="bank-levels-test">
+<h2>6. Bank levels test<a class="headerlink" href="#bank-levels-test" title="Permalink to this heading"></a></h2>
 <p><img alt="" src="../_images/bank_levels_tab_legend.png" /></p>
-<p>Voor meer informatie over de inhoud van de test, zie: <a class="reference external" href="./tests_documentation.html#bank_levels_test">Bank levels</a></p>
-<ol class="simple">
+<p>Voor meer informatie over de inhoud van de test, zie: <a class="reference internal" href="#./tests_documentation.html#bank_levels_test"><span class="xref myst">Bank levels</span></a></p>
+<ol class="arabic simple">
 <li><p>Selecteer 3di resultaten map: map waarin de 0d1d/hydraulic 3di test resultaten per revisie staan opgeslagen</p></li>
 <li><p>Selecteer 3di revisie: format is normaal gesproken {polder name}{revision number}{type of test} (map die
 <code class="docutils literal notranslate"><span class="pre">.nc</span></code> en <code class="docutils literal notranslate"><span class="pre">.h5</span></code> files bevat).</p></li>
@@ -191,13 +240,13 @@ kan opslaan.</p>
 gekozen <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">map</span></code>, in de <code class="docutils literal notranslate"><span class="pre">Layers</span></code> submap. De test resultaten worden ook als <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files in de gekozen
 <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">map</span></code> in de <code class="docutils literal notranslate"><span class="pre">Logs</span></code> submap.</p>
 <p><a id="1d2d_tests"></a></p>
-</div>
-<div class="section" id="d2d-tests">
-<h2>7. 1d2d tests<a class="headerlink" href="#d2d-tests" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="d2d-tests">
+<h2>7. 1d2d tests<a class="headerlink" href="#d2d-tests" title="Permalink to this heading"></a></h2>
 <p><img alt="" src="../_images/1d2d_tests_tab_legend.png" /></p>
 <p>De <code class="docutils literal notranslate"><span class="pre">1d2d</span> <span class="pre">tests</span></code> zijn bedoeld om de resultaten van de
-<a class="reference external" href="tests_documentation.html#1d2d_tests">1d2d toets</a> te analyseren.</p>
-<ol class="simple">
+<a class="reference internal" href="#tests_documentation.html#1d2d_tests"><span class="xref myst">1d2d toets</span></a> te analyseren.</p>
+<ol class="arabic simple">
 <li><p>Selecteer 3di resultaten map: map waarin de 0d1d/hydraulic 3di test resultaten per revisie staan opgeslagen</p></li>
 <li><p>Selecteer 3di revisie: format is normaal gesproken {polder name}{revision number}{type of test} (map die
 <code class="docutils literal notranslate"><span class="pre">.nc</span></code> en <code class="docutils literal notranslate"><span class="pre">.h5</span></code> files bevat).</p></li>
@@ -216,88 +265,38 @@ tests gestart.</p>
 gekozen <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">map</span></code>, in de map met de naam van de geselecteerde <code class="docutils literal notranslate"><span class="pre">revisie</span></code>, in de <code class="docutils literal notranslate"><span class="pre">Layers</span></code> submap. De test
 resultaten worden ook als <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files in de gekozen <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">map</span></code>, in de map met de naam van de geselecteerde
 <code class="docutils literal notranslate"><span class="pre">revisie</span></code>, in de <code class="docutils literal notranslate"><span class="pre">Logs</span></code> submap.</p>
-</div>
-</div>
+</section>
+</section>
 
 
+           </div>
           </div>
-          
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation_manual.html" class="btn btn-neutral float-left" title="Installatie instructies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="needed_data.html" class="btn btn-neutral float-right" title="Bron data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, L. Ravier.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">HHNK toolbox QGIS plugin</a></h1>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installation_manual.html">Installatie instructies</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Gebruikershandleiding</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#plugin-overzicht">Plugin overzicht</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#polder-selecteren">1. Polder selecteren</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nieuw-project-aanmaken">2. Nieuw project aanmaken</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#modelstaat-aanpassen">3. Modelstaat aanpassen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sqlite-tests">4. Sqlite tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#d1d-tests">5. 0d1d tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#bank-levels-test">6. Bank levels test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#d2d-tests">7. 1d2d tests</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="needed_data.html">Bron data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tests_documentation.html">Uitleg tests en functionaliteit</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="installation_manual.html" title="previous chapter">Installatie instructies</a></li>
-      <li>Next: <a href="needed_data.html" title="next chapter">Bron data</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2021, L. Ravier.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="../_sources/md_files/usage.md.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>

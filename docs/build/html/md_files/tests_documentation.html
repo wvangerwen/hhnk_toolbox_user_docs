@@ -1,89 +1,151 @@
-
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uitleg tests en functionaliteit &#8212; HHNK toolbox QGIS plugin 0.0.1 documentation</title>
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uitleg tests en functionaliteit &mdash; HHNK toolbox QGIS plugin 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Bron data" href="needed_data.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="prev" title="Bron data" href="needed_data.html" /> 
+</head>
 
-  </head><body>
-  
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
           
+          
+          <a href="../index.html" class="icon icon-home">
+            HHNK toolbox QGIS plugin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation_manual.html">Installatie instructies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Gebruikershandleiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="needed_data.html">Bron data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Uitleg tests en functionaliteit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#algemene-concepten">Algemene concepten</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standaard-project-indeling">Standaard project indeling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#indeling-project-map">Indeling project map:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#indeling-01-source-data">Indeling 01.Source_data:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#indeling-02-model">Indeling 02.Model:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#indeling-03-3di-results">Indeling 03.3di_results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#qgis-project"><code class="docutils literal notranslate"><span class="pre">QGIS</span></code> project</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelstaat-aanpassen">Modelstaat aanpassen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sqlite-tests">Sqlite tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-verificatie">Data verificatie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eenmalige-tests">Eenmalige tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#d1d-tests-hydraulische-toets">0d1d tests/hydraulische toets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bank-levels">Bank levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d2d-tests">1d2d tests</a></li>
+</ul>
+</li>
+</ul>
 
-          <div class="body" role="main">
-            
-  <div class="section" id="uitleg-tests-en-functionaliteit">
-<h1>Uitleg tests en functionaliteit<a class="headerlink" href="#uitleg-tests-en-functionaliteit" title="Permalink to this headline">¶</a></h1>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HHNK toolbox QGIS plugin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Uitleg tests en functionaliteit</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/md_files/tests_documentation.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="uitleg-tests-en-functionaliteit">
+<h1>Uitleg tests en functionaliteit<a class="headerlink" href="#uitleg-tests-en-functionaliteit" title="Permalink to this heading"></a></h1>
 <p>Op deze pagina vind je de inhoudelijke uitleg van de plugin functionaliteit.</p>
-<ol class="simple">
-<li><p><a class="reference external" href="#algemene_concepten">Algemene concepten</a></p>
-<ol class="simple">
-<li><p><a class="reference external" href="#project_indeling">Standaard project indeling</a></p></li>
-<li><p><a class="reference external" href="#qgis_project">Qgis project</a></p></li>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#algemene_concepten"><span class="xref myst">Algemene concepten</span></a></p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#project_indeling"><span class="xref myst">Standaard project indeling</span></a></p></li>
+<li><p><a class="reference internal" href="#qgis_project"><span class="xref myst">Qgis project</span></a></p></li>
 </ol>
 </li>
-<li><p><a class="reference external" href="#modelstaat_aanpassen">Modelstaat aanpassen</a></p></li>
-<li><p><a class="reference external" href="#sqlite_tests">Sqlite tests</a></p>
-<ol class="simple">
-<li><p><a class="reference external" href="#data_verificatie">Data verificatie</a></p>
-<ol class="simple">
-<li><p><a class="reference external" href="#ondoorlatend_oppervlak">Ondoorlatend oppervlak</a></p></li>
-<li><p><a class="reference external" href="#gebruikte_profielen">Gebruikte profielen</a></p></li>
-<li><p><a class="reference external" href="#gestuurde_kunstwerken">Gestuurde kunstwerken</a></p></li>
-<li><p><a class="reference external" href="#bodemhoogte_stuw">Bodemhoogte stuw</a></p></li>
-<li><p><a class="reference external" href="#geometrie">Geometrie</a></p></li>
-<li><p><a class="reference external" href="#bodemhoogte_kunstwerken">Bodemhoogte kunstwerken</a></p></li>
-<li><p><a class="reference external" href="#algemene_tests">Algemene tests</a></p></li>
-<li><p><a class="reference external" href="#geisoleerde_watergangen">Geïsoleerde watergangen</a></p></li>
+<li><p><a class="reference internal" href="#modelstaat_aanpassen"><span class="xref myst">Modelstaat aanpassen</span></a></p></li>
+<li><p><a class="reference internal" href="#sqlite_tests"><span class="xref myst">Sqlite tests</span></a></p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#data_verificatie"><span class="xref myst">Data verificatie</span></a></p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#ondoorlatend_oppervlak"><span class="xref myst">Ondoorlatend oppervlak</span></a></p></li>
+<li><p><a class="reference internal" href="#gebruikte_profielen"><span class="xref myst">Gebruikte profielen</span></a></p></li>
+<li><p><a class="reference internal" href="#gestuurde_kunstwerken"><span class="xref myst">Gestuurde kunstwerken</span></a></p></li>
+<li><p><a class="reference internal" href="#bodemhoogte_stuw"><span class="xref myst">Bodemhoogte stuw</span></a></p></li>
+<li><p><a class="reference internal" href="#geometrie"><span class="xref myst">Geometrie</span></a></p></li>
+<li><p><a class="reference internal" href="#bodemhoogte_kunstwerken"><span class="xref myst">Bodemhoogte kunstwerken</span></a></p></li>
+<li><p><a class="reference internal" href="#algemene_tests"><span class="xref myst">Algemene tests</span></a></p></li>
+<li><p><a class="reference internal" href="#geisoleerde_watergangen"><span class="xref myst">Geïsoleerde watergangen</span></a></p></li>
 </ol>
 </li>
-<li><p><a class="reference external" href="#eenmalige_tests">Eenmalige tests</a></p>
-<ol class="simple">
-<li><p><a class="reference external" href="#max_waarde_dem">Maximale waarde DEM</a></p></li>
-<li><p><a class="reference external" href="#ontwateringsdiepte">Ontwateringsdiepte</a></p></li>
-<li><p><a class="reference external" href="#oppervlaktewater">Oppervlaktewater</a></p></li>
+<li><p><a class="reference internal" href="#eenmalige_tests"><span class="xref myst">Eenmalige tests</span></a></p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#max_waarde_dem"><span class="xref myst">Maximale waarde DEM</span></a></p></li>
+<li><p><a class="reference internal" href="#ontwateringsdiepte"><span class="xref myst">Ontwateringsdiepte</span></a></p></li>
+<li><p><a class="reference internal" href="#oppervlaktewater"><span class="xref myst">Oppervlaktewater</span></a></p></li>
 </ol>
 </li>
 </ol>
 </li>
-<li><p><a class="reference external" href="#0d1d_tests">0d1d tests</a></p></li>
-<li><p><a class="reference external" href="#bank_levels_test">Bank levels</a></p></li>
-<li><p><a class="reference external" href="#1d2d_tests">1d2d tests</a></p></li>
+<li><p><a class="reference internal" href="#0d1d_tests"><span class="xref myst">0d1d tests</span></a></p></li>
+<li><p><a class="reference internal" href="#bank_levels_test"><span class="xref myst">Bank levels</span></a></p></li>
+<li><p><a class="reference internal" href="#1d2d_tests"><span class="xref myst">1d2d tests</span></a></p></li>
 </ol>
 <p><a id="algemene_concepten"></a></p>
-<div class="section" id="algemene-concepten">
-<h2>Algemene concepten<a class="headerlink" href="#algemene-concepten" title="Permalink to this headline">¶</a></h2>
+<section id="algemene-concepten">
+<h2>Algemene concepten<a class="headerlink" href="#algemene-concepten" title="Permalink to this heading"></a></h2>
 <p><a id="project_indeling"></a></p>
-<div class="section" id="standaard-project-indeling">
-<h3>Standaard project indeling<a class="headerlink" href="#standaard-project-indeling" title="Permalink to this headline">¶</a></h3>
+<section id="standaard-project-indeling">
+<h3>Standaard project indeling<a class="headerlink" href="#standaard-project-indeling" title="Permalink to this heading"></a></h3>
 <p>De HHNK Toolbox werkt het makkelijkst wanneer een project op een bepaalde manier is ingedeeld. Als een project op die
 manier is ingedeeld worden de meeste paden automatisch ingevuld wanneer je een polder selecteert. De indeling is als
 volgt:</p>
-<div class="section" id="indeling-project-map">
-<h4>Indeling project map:<a class="headerlink" href="#indeling-project-map" title="Permalink to this headline">¶</a></h4>
+<section id="indeling-project-map">
+<h4>Indeling project map:<a class="headerlink" href="#indeling-project-map" title="Permalink to this heading"></a></h4>
 <p><img alt="" src="../_images/default_folder_top_level.PNG" /></p>
-</div>
-<div class="section" id="indeling-01-source-data">
-<h4>Indeling 01.Source_data:<a class="headerlink" href="#indeling-01-source-data" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="indeling-01-source-data">
+<h4>Indeling 01.Source_data:<a class="headerlink" href="#indeling-01-source-data" title="Permalink to this heading"></a></h4>
 <p><img alt="" src="../_images/default_folder_source_data.PNG" /></p>
 <p>Nodig voor tests:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>DAMO.gdb
@@ -98,9 +160,9 @@ polder_polygon (alle extensies)
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>channel_surface_from_profiles (shapefile uit modelbuilder)
 </pre></div>
 </div>
-</div>
-<div class="section" id="indeling-02-model">
-<h4>Indeling 02.Model:<a class="headerlink" href="#indeling-02-model" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="indeling-02-model">
+<h4>Indeling 02.Model:<a class="headerlink" href="#indeling-02-model" title="Permalink to this heading"></a></h4>
 <p><img alt="" src="../_images/default_folder_model.PNG" /></p>
 <p>Nodig voor tests:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>model.sqlite
@@ -112,18 +174,18 @@ polder_polygon (alle extensies)
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dem_[polder] (waar [polder] de naam van de polder is)
 </pre></div>
 </div>
-</div>
-<div class="section" id="indeling-03-3di-results">
-<h4>Indeling 03.3di_results<a class="headerlink" href="#indeling-03-3di-results" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="indeling-03-3di-results">
+<h4>Indeling 03.3di_results<a class="headerlink" href="#indeling-03-3di-results" title="Permalink to this heading"></a></h4>
 <p><img alt="" src="../_images/default_folder_3di_results.PNG" /></p>
 <p>In zowel de <code class="docutils literal notranslate"><span class="pre">0d1d_results</span> <span class="pre">map</span></code> als de <code class="docutils literal notranslate"><span class="pre">1d2d_results</span></code> map staan de gedownloade resultaten van het draaien van
 3di berekeningen. De conventie voor de naam van mappen is:</p>
 <p><code class="docutils literal notranslate"><span class="pre">{naam</span> <span class="pre">polder}</span> <span class="pre">#{revisie</span> <span class="pre">nummer}</span> <span class="pre">{type</span> <span class="pre">test}</span></code></p>
 <p>Bijvoorbeeld:</p>
 <p><img alt="" src="../_images/revision_example.PNG" /></p>
-</div>
-<div class="section" id="output">
-<h4>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="output">
+<h4>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h4>
 <p>De <code class="docutils literal notranslate"><span class="pre">Output</span></code> map is de map die (standaard) wordt gebruikt door de plugin om resultaten van tests op te slaan. De
 indeling van deze map wordt bepaald door de plugin en is als volgt:</p>
 <p><img alt="" src="../_images/default_folder_output.PNG" /></p>
@@ -137,10 +199,10 @@ lagen in <code class="docutils literal notranslate"><span class="pre">QGIS</span
 aangezet. Je kunt deze bestanden dus ook niet gebruiken als basis voor andere lagen in je project. Als je de eerdere
 resultaten van een test wil behouden, kun je het best een andere output map specificeren.</p>
 <p><a id="qgis_project"></a></p>
-</div>
-</div>
-<div class="section" id="qgis-project">
-<h3><code class="docutils literal notranslate"><span class="pre">QGIS</span></code> project<a class="headerlink" href="#qgis-project" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="qgis-project">
+<h3><code class="docutils literal notranslate"><span class="pre">QGIS</span></code> project<a class="headerlink" href="#qgis-project" title="Permalink to this heading"></a></h3>
 <p>De meeste tests die deel uitmaken van de toolbox voegen, als onderdeel van hun output, een kaartlaag (of meerdere
 kaartlagen) toe aan het op dat moment geopende <code class="docutils literal notranslate"><span class="pre">QGIS</span></code>-project. Elke test beheert zijn eigen <code class="docutils literal notranslate"><span class="pre">QGIS</span> <span class="pre">layer</span> <span class="pre">group</span></code>
 en diens subgroepen. De hoofdgroepen zijn als volgt:</p>
@@ -149,13 +211,13 @@ en diens subgroepen. De hoofdgroepen zijn als volgt:</p>
 behouden (bijvoorbeeld ter vergelijking), dan kun je bijvoorbeeld de hoofdgroepen hernoemen. Let op: je zult in dit
 geval ook een andere output map moeten specificeren.</p>
 <p><a id="modelstaat_aanpassen"></a></p>
-</div>
-</div>
-<div class="section" id="modelstaat-aanpassen">
-<h2>Modelstaat aanpassen<a class="headerlink" href="#modelstaat-aanpassen" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="modelstaat-aanpassen">
+<h2>Modelstaat aanpassen<a class="headerlink" href="#modelstaat-aanpassen" title="Permalink to this heading"></a></h2>
 <p>Het aanpassen van de modelstaat is een hulpmiddel om te zorgen dat het rekenen met een model zo foutloos mogelijk
 gebeurt. Binnen de werkwijze van HHNK worden twee belangrijke model toetsingen gedaan:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>0d1d toetsing van het model t.b.v. de hydraulische randvoorwaarde (alleen watersysteem)</p></li>
 <li><p>1d2d toetsing van het model t.b.v. klimaatsommen (watersysteem, maaiveld en bodem)</p></li>
 </ol>
@@ -165,7 +227,7 @@ duiker) dan niet in twee modellen dienen te worden doorgevoerd. De aanpassingen 
 bij het aanpassen van de modelstaat hebben betrekking op de uitwisseling tussen het watersysteem (1D) en het
 maaiveld (2D).</p>
 <p>Met deze aanpassingen in gedachten worden drie model staten onderscheiden:</p>
-<ol>
+<ol class="arabic">
 <li><p>Niet gedefinieerd/uit modelbuilder</p>
 <p>Van een model in deze staat wordt voor conversie aangenomen dat het een model betreft dat in de staat is zoals het uit de modelbuilder komt.</p>
 </li>
@@ -196,7 +258,7 @@ maaiveld (2D).</p>
 gedetecteerde staat van het model bepaalt welke aanpassingen er worden gedaan.</p>
 <p>Aanpassingen per staat</p>
 <p>Van modelbuilder staat naar hydraulische toets/0d1d staat:</p>
-<table class="colwidths-auto docutils align-default">
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Tabel in model</p></th>
 <th class="head"><p>Aanpassingen</p></th>
@@ -218,7 +280,7 @@ gedetecteerde staat van het model bepaalt welke aanpassingen er worden gedaan.</
 </tbody>
 </table>
 <p>Van modelbuilder staat naar 1d2d staat:</p>
-<table class="colwidths-auto docutils align-default">
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Tabel in model</p></th>
 <th class="head"><p>Aanpassingen ‘Berekenen uit 3di resultaat’</p></th>
@@ -241,7 +303,7 @@ gedetecteerde staat van het model bepaalt welke aanpassingen er worden gedaan.</
 </tbody>
 </table>
 <p>Van hydraulische toets/0d1d staat naar 1d2d staat:</p>
-<table class="colwidths-auto docutils align-default">
+<table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Tabel in model</p></th>
 <th class="head"><p>Aanpassingen ‘Berekenen uit 3di resultaat’</p></th>
@@ -276,23 +338,23 @@ gedetecteerde staat van het model bepaalt welke aanpassingen er worden gedaan.</
 </tbody>
 </table>
 <p><a id="sqlite_tests"></a></p>
-</div>
-<div class="section" id="sqlite-tests">
-<h2>Sqlite tests<a class="headerlink" href="#sqlite-tests" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="sqlite-tests">
+<h2>Sqlite tests<a class="headerlink" href="#sqlite-tests" title="Permalink to this heading"></a></h2>
 <p>De sqlite tests zijn bedoeld om te checken of het model geschikt is om mee te rekenen. Hieronder worden de tests
 inhoudelijk toegelicht.</p>
 <p><a id="data_verificatie"></a></p>
-<div class="section" id="data-verificatie">
-<h3>Data verificatie<a class="headerlink" href="#data-verificatie" title="Permalink to this headline">¶</a></h3>
+<section id="data-verificatie">
+<h3>Data verificatie<a class="headerlink" href="#data-verificatie" title="Permalink to this heading"></a></h3>
 <p><a id="ondoorlatend_oppervlak"></a></p>
-<ol>
+<ol class="arabic">
 <li><p>Ondoorlatend oppervlak</p>
 <p>Berekent het oppervlak van de polder op basis van de <code class="docutils literal notranslate"><span class="pre">polder_shapefile</span></code> en het ondoorlatend oppervlak in
 het model. Het verschil tussen de twee zou niet te groot moeten zijn.</p>
 </li>
 </ol>
 <p><a id="gebruikte_profielen"></a></p>
-<ol>
+<ol class="arabic" start="2">
 <li><p>Gebruikte profielen</p>
 <p>Koppelt de v2_cross_section_definition laag van het model (discrete weergave van de natuurlijke geometrie van de
 watergangen) aan de v2_channel laag (informatie over watergangen in het model). Het resultaat van deze toets is een
@@ -300,7 +362,7 @@ weergave van de breedtes en dieptes van watergangen in het model ter controle.</
 </li>
 </ol>
 <p><a id="gestuurde_kunstwerken"></a></p>
-<ol>
+<ol class="arabic" start="3">
 <li><p>Gestuurde kunstwerken</p>
 <p>Deze test selecteert alle gestuurde kunstwerken (uit de v2_culvert, v2_orifice en v2_weir tabellen van het model) op
 basis van de v2_control_table tafel. Per kunstwerk worden actiewaarden opgevraagd. Per gevonden gestuurd kunstwerk
@@ -309,7 +371,7 @@ hoogtes.</p>
 </li>
 </ol>
 <p><a id="bodemhoogte_stuw"></a></p>
-<ol>
+<ol class="arabic" start="4">
 <li><p>Bodemhoogte stuw</p>
 <p>Deze test vergelijkt de minimale kruinhoogte uit de sturingstabel met de aanliggende watergangen. Als de bodemhoogte
 van de watergang hoger ligt dan de minimale kruinhoogte moet hier nog iets in worden aangepast door in de
@@ -318,21 +380,21 @@ goedkeuring aan de gebruiker voorgelegd.</p>
 </li>
 </ol>
 <p><a id="geometrie"></a></p>
-<ol>
+<ol class="arabic" start="5">
 <li><p>Geometrie</p>
 <p>Deze test checkt of de geometrie van een object in het model correspondeert met de start- of end node in de
 v2_connection_nodes tabel. Als de verkeerde ids worden gebruikt geeft dit fouten in het model.</p>
 </li>
 </ol>
 <p><a id="bodemhoogte_kunstwerken"></a></p>
-<ol>
+<ol class="arabic" start="6">
 <li><p>Bodemhoogte kunstwerken</p>
 <p>Test checkt of de kruinhoogte of bodemhoogte van een kunstwerk lager ligt dan de bodemhoogte van aanliggende
 watergangen. Als dit zo is moet dat worden aangepast om met het model te kunnen rekenen.</p>
 </li>
 </ol>
 <p><a id="algemene_tests"></a></p>
-<ol>
+<ol class="arabic" start="7">
 <li><p>Algemene tests</p>
 <p>De algemene tests is een collectie van checks op fouten die ervoor zorgen dat het model niet kan worden opgebouwd
 of waardoor er niet meer gerekend kan worden. In het resultaat wordt onderscheid gemaakt tussen fouten en
@@ -341,34 +403,34 @@ omschreven wat het probleem is.</p>
 </li>
 </ol>
 <p><a id="geisoleerde_watergangen"></a></p>
-<ol>
+<ol class="arabic" start="8">
 <li><p>Geïsoleerde watergangen</p>
 <p>Test bepaalt welk aandeel van watergangen geen verbinding heeft met het maaiveld (isolated).
 Het aandeel mag niet te groot zijn omdat neerslag de watergangen dan onvoldoende kunnen bereiken.</p>
 </li>
 </ol>
 <p><a id="eenmalige_tests"></a></p>
-</div>
-<div class="section" id="eenmalige-tests">
-<h3>Eenmalige tests<a class="headerlink" href="#eenmalige-tests" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="eenmalige-tests">
+<h3>Eenmalige tests<a class="headerlink" href="#eenmalige-tests" title="Permalink to this heading"></a></h3>
 <p>De eenmalige tests zijn er om een aantal randvoorwaarden te controleren. Als geverifieerd is dat hieraan is voldaan dan
 hoeven ze niet opnieuw te worden gedraaid.</p>
 <p><a id="max_waarde_dem"></a></p>
-<ol>
+<ol class="arabic">
 <li><p>Maximale waarde DEM</p>
 <p>Als de maximale waarde in de DEM te hoog is, duidt dat meestal op een fout in het bestand (de nodata waarde is
 waarschijnlijk verkeerd ingevoerd). Deze test berekent deze maximale waarde.</p>
 </li>
 </ol>
 <p><a id="ontwateringsdiepte"></a></p>
-<ol>
+<ol class="arabic" start="2">
 <li><p>Ontwateringsdiepte</p>
 <p>Deze test controleert of het initiële water niveau per polder onder de oppervlakte hoogte uitgelezen uit de DEM
 ligt. Het initiële water niveau moet onder het oppervlak liggen.</p>
 </li>
 </ol>
 <p><a id="oppervlaktewater"></a></p>
-<ol>
+<ol class="arabic" start="3">
 <li><p>Oppervlaktewater</p>
 <p>Deze test controleert per peilgebied in het model hoe groot het gebied is dat het oppervlaktewater beslaat in het
 model. Dit totaal is opgebouwd uit de <code class="docutils literal notranslate"><span class="pre">storage_area</span></code> uit de <code class="docutils literal notranslate"><span class="pre">v2_connection_nodes</span></code> tafel opgeteld bij het
@@ -378,14 +440,14 @@ over- of onderschatting van het oppervlaktewater in het model.</p>
 </li>
 </ol>
 <p><a id="0d1d_tests"></a></p>
-</div>
-</div>
-<div class="section" id="d1d-tests-hydraulische-toets">
-<h2>0d1d tests/hydraulische toets<a class="headerlink" href="#d1d-tests-hydraulische-toets" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="d1d-tests-hydraulische-toets">
+<h2>0d1d tests/hydraulische toets<a class="headerlink" href="#d1d-tests-hydraulische-toets" title="Permalink to this heading"></a></h2>
 <p>Als de sqlite tests zijn uitgevoerd, eventuele aanpassingen zijn gemaakt en het model is opgebouwd voor rekenen met 3di
 wordt de hydraulische toets gedraaid. Deze toets is een test bui ontworpen om de 0d1d aspecten van het model te
 controleren.</p>
-<p>Deze test werkt het best wanneer het model in de juiste staat is (zie <a class="reference external" href="#modelstaat_aanpassen">Model staat aanpassen</a>).</p>
+<p>Deze test werkt het best wanneer het model in de juiste staat is (zie <a class="reference internal" href="#modelstaat_aanpassen"><span class="xref myst">Model staat aanpassen</span></a>).</p>
 <p>De test bui begint met een droge dag, vijf dagen neerslag (14,4 mm/dag) en dan twee dagen droog.</p>
 <p><img alt="" src="../_images/hydraulische_toets_bui.PNG" /></p>
 <p>Het resultaat van het simuleren van deze bui kan vervolgens worden geanalyseerd met de HHNK Toolbox. De
@@ -426,9 +488,9 @@ Voor deze watergangen en kunstwerken wordt het volgende bepaald:</p>
 <p>Als er voldoende vertrouwen in de uitkomsten van het model is kan het verhang over watergangen en
 kunstwerken worden vergeleken met geldende normen (bijvoorbeeld 4 cm/km).</p>
 <p><a id="bank_levels_test"></a></p>
-</div>
-<div class="section" id="bank-levels">
-<h2>Bank levels<a class="headerlink" href="#bank-levels" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="bank-levels">
+<h2>Bank levels<a class="headerlink" href="#bank-levels" title="Permalink to this heading"></a></h2>
 <p>Als het 0d1d model is goedgekeurd kan deze test worden gedraaid. De bank levels test is grotendeels bedoeld om het model
 klaar te maken voor 3di simulaties waarbij uitwisseling plaatsvindt tussen het watersysteem en het maaiveld.
 Door de resultaten van de simulatie te analyseren wordt bepaald welke watergangen een 1d2d verbinding hebben over een
@@ -440,12 +502,12 @@ gelijk aan de levee hoogte.</p>
 <p>Het draaien van de bank levels test kan worden gedaan met elk 3di resultaat zolang het reken grid niet is veranderd. De
 inhoud van het scenario is hierbij niet relevant.</p>
 <p><a id="1d2d_tests"></a></p>
-</div>
-<div class="section" id="d2d-tests">
-<h2>1d2d tests<a class="headerlink" href="#d2d-tests" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="d2d-tests">
+<h2>1d2d tests<a class="headerlink" href="#d2d-tests" title="Permalink to this heading"></a></h2>
 <p>Wanneer de bank levels zijn bijgewerkt en waar nodig manholes zijn toegevoegd kan de 1d2d test worden gedraaid. Dit
 houdt in dat er opnieuw een test bui wordt gesimuleerd met 3di.</p>
-<p>Deze test werkt alleen wanneer het model in de 1d2d-toets-staat is ingesteld (zie <a class="reference external" href="#modelstaat_aanpassen">Model staat aanpassen</a>).</p>
+<p>Deze test werkt alleen wanneer het model in de 1d2d-toets-staat is ingesteld (zie <a class="reference internal" href="#modelstaat_aanpassen"><span class="xref myst">Model staat aanpassen</span></a>).</p>
 <p>De test bui begint in dit geval met een uur droog, dan twee uur regen (17,75 mm/uur), dan 12 uur droog.</p>
 <p><img alt="" src="../_images/1d2d_toets_bui.PNG" /></p>
 <p>Het resultaat van het simuleren van deze bui met het model kan vervolgens worden geanalyseerd met de HHNK Toolbox. De
@@ -486,85 +548,37 @@ som) het volgende bepaald:</p>
 basis van de DEM en de waterstand per tijdstap de waterdiepte bepaald.</p>
 </li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
+           </div>
           </div>
-          
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="needed_data.html" class="btn btn-neutral float-left" title="Bron data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, L. Ravier.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">HHNK toolbox QGIS plugin</a></h1>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installation_manual.html">Installatie instructies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Gebruikershandleiding</a></li>
-<li class="toctree-l1"><a class="reference internal" href="needed_data.html">Bron data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Uitleg tests en functionaliteit</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#algemene-concepten">Algemene concepten</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#modelstaat-aanpassen">Modelstaat aanpassen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sqlite-tests">Sqlite tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#d1d-tests-hydraulische-toets">0d1d tests/hydraulische toets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#bank-levels">Bank levels</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#d2d-tests">1d2d tests</a></li>
-</ul>
-</li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="needed_data.html" title="previous chapter">Bron data</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2021, L. Ravier.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="../_sources/md_files/tests_documentation.md.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>
