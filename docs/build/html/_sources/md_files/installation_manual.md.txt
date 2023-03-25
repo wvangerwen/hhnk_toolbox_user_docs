@@ -32,7 +32,7 @@ Kijk, na herstart, of de 3Di Toolbox goed is geinstalleerd en geactiveerd. Navig
 <a id="plugin_installatie"></a>
 
 ## Installatie HHNK Toolbox Plugin
-Download `hhnk_threedi_plugin.zip` [hier](https://github.com/threedi/hhnk-threedi-plugin/releases/latest/download/hhnk_threedi_plugin.zip). 
+Download de laatste `hhnk_threedi_plugin.zip` [hier](https://github.com/threedi/hhnk-threedi-plugin/releases/latest/download/hhnk_threedi_plugin.zip). 
 
 Je kunt hem ook downloaden via de release-pagina op GitHub <a href="https://github.com/threedi/hhnk-threedi-plugin/releases/latest" target="_blank">https://github.com/threedi/hhnk-threedi-plugin/releases/latest</a>:
 
